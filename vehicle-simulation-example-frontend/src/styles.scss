@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --mapfilter: grayscale(0.4);
+}
+
+/* ... */
+html body.dark {
+  --mapfilter: invert(0.5) grayscale(0.4);
+}
+
+.map-layer,
+.leaflet-tile-container {
+  filter: var(--mapfilter);
+  -webkit-filter: var(--mapfilter);
+}
