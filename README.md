@@ -7,33 +7,33 @@ https://project-osrm.org/
 
 ### Instrukcije za pokretanje:
 
-- Backend se nalazi u folderu: **vehicle-simulation-example-backend** i pokrece se kao i ostali primeri dosad
-- Frontend se nalazi u folderu: **vehicle-simulation-example-frontend** i pokrece se komandom **npm start** (pre toga odraditi **npm install**)
+- Backend se nalazi u folderu: **vehicle-simulation-example-backend** i pokreće se kao i ostali primeri dosad
+- Frontend se nalazi u folderu: **vehicle-simulation-example-frontend** i pokreće se komandom **npm start** (pre toga odraditi **npm install**)
 - Locust skripta se nalazi folderu **locust**
 
-Za pokretanje locust skripte je neophodno imati instaliran python (pozeljno neku od novijih verzija): https://www.python.org/downloads/
+Za pokretanje locust skripte je neophodno imati instaliran python (poželjno neku od novijih verzija): https://www.python.org/downloads/
 
 Nakon toga, potrebno je instalirati pip alat koji će vam omogućiti da instalirate eksterne biblioteke u lokalni virutelni environment: https://pip.pypa.io/en/stable/installation/
 
-Kreiranje lokalnog virtual environment-a je pozeljno da uradite u ovom projektu (pozicionirati se u prevucen projekat). Kreiranje i aktivacija:
+Kreiranje lokalnog virtual environment-a je poželjno da uradite u ovom projektu (pozicionirati se u prevučen projekat). Kreiranje i aktivacija:
 
-Linux i MacOS:
-**virtualenv vehicle-simulation**
-**source vehicle-simulation/bin/activate**
+Linux i MacOS:\
+**virtualenv vehicle-simulation**\
+**source vehicle-simulation/bin/activate**\
 
-Windows:
-**virtualenv vehicle-simulation**
-**vehicle-simulation\Scripts\activate** -> Ako koristite cmd
-**source vehicle-simulation\Scripts\activate** -> Ako koristite git bash
+Windows:\
+**virtualenv vehicle-simulation**\
+**vehicle-simulation\Scripts\activate** -> Ako koristite cmd\
+**source vehicle-simulation\Scripts\activate** -> Ako koristite git bash\
 
-Nakon aktivacije virtualenv okruženja, instalirati sledeće biblioteke:
-**pip3 install locust**
-**pip3 install requests**
+Nakon aktivacije virtualenv okruženja, instalirati sledeće biblioteke:\
+**pip3 install locust**\
+**pip3 install requests**\
 
 Pre pokretanja Locust skripte pokrenuti **Backend** pa **Frontend**.
 
-Locust skriptu pokrenuti komandom:
-**locust -f locust/simulation.py --headless -u 3 -r 1 --run-time 30m**
+Locust skriptu pokrenuti komandom:\
+**locust -f locust/simulation.py --headless -u 3 -r 1 --run-time 30m**\
 
 ### Promena port-a
 
