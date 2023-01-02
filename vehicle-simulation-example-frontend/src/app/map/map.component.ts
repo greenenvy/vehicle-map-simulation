@@ -57,7 +57,7 @@ export class MapComponent implements OnInit {
   }
 
   initializeWebSocketConnection() {
-    let ws = new SockJS('api/socket');
+    let ws = new SockJS('http://localhost:8080/socket');
     this.stompClient = Stomp.over(ws);
     this.stompClient.debug = null;
     let that = this;
