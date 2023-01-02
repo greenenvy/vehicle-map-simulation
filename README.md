@@ -38,5 +38,5 @@ Locust skriptu pokrenuti komandom:\
 ### Promena port-a
 
 - Za Backend promeniti port u **application.properties** fajlu
-- Za Frontend promeniti port u **proxy.conf.json** fajlu i u map.component.ts liniju 60
+- Za Frontend promeniti port u **proxy.conf.json** fajlu i u **map.component.ts** liniju 60
 - Za Locust skriptu promeniti vrednosti port-a gde god se isti pominje u samom fajlu
