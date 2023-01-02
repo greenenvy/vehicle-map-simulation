@@ -32,6 +32,8 @@ Nakon aktivacije virtualenv okruženja, instalirati sledeće biblioteke:\
 
 Pre pokretanja Locust skripte pokrenuti **Backend** pa **Frontend**.
 
+Mapa se nalazi na stranici **http://localhost:4200**
+
 Locust skriptu pokrenuti komandom:\
 **locust -f locust/simulation.py --headless -u 3 -r 1 --run-time 30m**
 
