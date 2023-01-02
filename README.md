@@ -19,21 +19,21 @@ Kreiranje lokalnog virtual environment-a je poželjno da uradite u ovom projektu
 
 Linux i MacOS:\
 **virtualenv vehicle-simulation**\
-**source vehicle-simulation/bin/activate**\
+**source vehicle-simulation/bin/activate**
 
 Windows:\
 **virtualenv vehicle-simulation**\
 **vehicle-simulation\Scripts\activate** -> Ako koristite cmd\
-**source vehicle-simulation\Scripts\activate** -> Ako koristite git bash\
+**source vehicle-simulation\Scripts\activate** -> Ako koristite git bash
 
 Nakon aktivacije virtualenv okruženja, instalirati sledeće biblioteke:\
 **pip3 install locust**\
-**pip3 install requests**\
+**pip3 install requests**
 
 Pre pokretanja Locust skripte pokrenuti **Backend** pa **Frontend**.
 
 Locust skriptu pokrenuti komandom:\
-**locust -f locust/simulation.py --headless -u 3 -r 1 --run-time 30m**\
+**locust -f locust/simulation.py --headless -u 3 -r 1 --run-time 30m**
 
 ### Promena port-a
 
